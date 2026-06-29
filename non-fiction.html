@@ -1,105 +1,868 @@
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
-    <title>Non-Fiction Books</title>
-    <link rel="stylesheet" href="Book World.css"/>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Non-Fiction Books | Book World</title>
+
+    <!-- Google Fonts -->
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet">
+
+    <!-- Font Awesome -->
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <link rel="stylesheet"
+          href="styles/style.css">
+
+    <link rel="stylesheet"
+          href="styles/responsive.css">
+
 </head>
+
 <body>
-    <center>
-        <h1>BOOK WORLD 📖</h1>
-    </center>
-    
-    <h2>Non-Fiction Books</h2>
 
-<center>
+<!-- ================= LOADER ================= -->
 
-    <div>
-        <center>
-            <p><b>The Psycology of Money</b></p>
-            <img src="book world images/book7.jpg" width="125px" height="220px"
-                 alt="image of Psycology of money book"/>
-            <p>This is a collection of short stories exploring the strange ways people think about money.</p>
-            <p><b>Rs.990</b></p>
-            <button class="btn">Oder Now</button>
-        </center>
+<div class="loader">
+
+    <div class="loader-content">
+
+        <i class="fas fa-book-open"></i>
+
+        <h2>Book World</h2>
+
+        <span>Loading...</span>
+
     </div>
 
-    <div class="book">
-        <center>
-            <p><b>The Golden Road</b></p>
-            <img src="book world images/book6.jpg" width="125px" height="220px" 
-                 alt="image of The golden road book"/>
-            <p>This discusses the ways in which india's ideas and influences spread throughout and shaped.</p>
-            <p><b>Rs.850</b></p>
-            <button class="btn">Oder Now</button>
-        </center>
+</div>
+
+<button id="topBtn">
+
+    <i class="fas fa-arrow-up"></i>
+
+</button>
+
+<!-- ================= NAVBAR ================= -->
+
+<header>
+
+<nav class="navbar">
+
+<div class="logo">
+
+<i class="fas fa-book-open"></i>
+
+<h2>Book World</h2>
+
+</div>
+
+<ul class="nav-links">
+
+<li>
+
+<a href="index.html">
+
+Home
+
+</a>
+
+</li>
+
+<li>
+
+<a href="fiction.html">
+
+Fiction
+
+</a>
+
+</li>
+
+<li>
+
+<a href="non-fiction.html"
+class="active">
+
+Non Fiction
+
+</a>
+
+</li>
+
+<li>
+
+<a href="testimonial.html">
+
+Testimonials
+
+</a>
+
+</li>
+
+<li>
+
+<a href="contact.html">
+
+Contact
+
+</a>
+
+</li>
+
+</ul>
+
+<div class="nav-icons">
+
+<div class="search-box">
+
+<i class="fas fa-search"></i>
+
+<input
+type="text"
+id="searchInput"
+placeholder="Search Non-Fiction Books">
+
+</div>
+
+<button id="themeBtn">
+
+<i class="fas fa-moon"></i>
+
+</button>
+
+<div class="cart">
+
+<i class="fas fa-shopping-cart"></i>
+
+<span id="cartCount">
+
+0
+
+</span>
+
+</div>
+
+<div class="menu-btn">
+
+<i class="fas fa-bars"></i>
+
+</div>
+
+</div>
+
+</nav>
+
+</header>
+
+<!-- ================= HERO ================= -->
+
+<section class="hero category-hero">
+
+<div class="hero-overlay">
+
+<div class="hero-content">
+
+<span class="tag">
+
+Knowledge Collection
+
+</span>
+
+<h1>
+
+Explore Inspiring Non-Fiction Books
+
+</h1>
+
+<p>
+
+Discover books that educate,
+motivate and inspire.
+Browse business,
+history,
+psychology,
+science and self-improvement titles.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= BREADCRUMB ================= -->
+
+<section class="breadcrumb">
+
+<a href="index.html">
+
+Home
+
+</a>
+
+<span>
+
+/</span>
+
+<span>
+
+Non Fiction
+
+</span>
+
+</section>
+
+<!-- ================= FILTER ================= -->
+
+<section class="book-filter">
+
+<div class="filter-left">
+
+<h2>
+
+Non-Fiction Books
+
+</h2>
+
+<p>
+
+Expand your knowledge with our carefully selected collection.
+
+</p>
+
+</div>
+
+<div class="filter-right">
+
+<select>
+
+<option>
+
+Sort By
+
+</option>
+
+<option>
+
+Price : Low to High
+
+</option>
+
+<option>
+
+Price : High to Low
+
+</option>
+
+<option>
+
+Best Selling
+
+</option>
+
+<option>
+
+Latest
+
+</option>
+
+</select>
+
+</div>
+
+</section>
+
+<!-- ================= BOOKS ================= -->
+
+<section class="books">
+
+<div class="book-grid">
+
+<!-- BOOK 1 -->
+
+<div class="book-card">
+
+<div class="book-image">
+
+<img src="book world images/psycology of money.jpg"
+alt="Psychology of Money">
+
+<span class="badge">
+
+Best Seller
+
+</span>
+
+</div>
+
+<div class="book-info">
+
+<div class="rating">
+
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star-half-alt"></i>
+
+</div>
+
+<h3>
+
+Psychology of Money
+
+</h3>
+
+<p>
+
+Morgan Housel
+
+</p>
+
+<h4>
+
+Rs.990
+
+</h4>
+
+<div class="book-buttons">
+
+<button class="cart-btn">
+
+<i class="fas fa-cart-plus"></i>
+
+Add to Cart
+
+</button>
+
+<a href="#">
+
+View Details
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- BOOK 2 -->
+
+<div class="book-card">
+
+<div class="book-image">
+
+<img src="book world images/atomic habits.jpg"
+alt="Atomic Habits">
+
+<span class="badge sale">
+
+Popular
+
+</span>
+
+</div>
+
+<div class="book-info">
+
+<div class="rating">
+
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+
+</div>
+
+<h3>
+
+Atomic Habits
+
+</h3>
+
+<p>
+
+James Clear
+
+</p>
+
+<h4>
+
+Rs.990
+
+</h4>
+
+<div class="book-buttons">
+
+<button class="cart-btn">
+
+<i class="fas fa-cart-plus"></i>
+
+Add to Cart
+
+</button>
+
+<a href="#">
+
+View Details
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- ================= BOOK 3 ================= -->
+
+<div class="book-card">
+
+    <div class="book-image">
+
+        <img src="book world images/the wager.jpg"
+             alt="The Wager">
+
     </div>
 
-    <div class="book">
-        <center>
-            <p><b>The Wager</b></p>
-            <img src="book world images/book8.jpg" width="125px" height="220px"
-                 alt="image of The wager book"/>
-            <p>A mysterious disappearence of a treasure and the dangerous quest to uncover ancient artifacts.</p>
-            <p><b>Rs.920</b></p>
-            <button class="btn">Oder Now</button>
-        </center>
+    <div class="book-info">
+
+        <div class="rating">
+
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+
+        </div>
+
+        <h3>
+
+            The Wager
+
+        </h3>
+
+        <p>
+
+            David Grann
+
+        </p>
+
+        <h4>
+
+            Rs.920
+
+        </h4>
+
+        <div class="book-buttons">
+
+            <button class="cart-btn">
+
+                <i class="fas fa-cart-plus"></i>
+
+                Add to Cart
+
+            </button>
+
+            <a href="#">
+
+                View Details
+
+            </a>
+
+        </div>
+
     </div>
 
-    <div class="book">
-        <center>
-            <p><b>Atomic Habits</b></p>
-            <img src="book world images/book9.jpg" width="125px" height="220px"
-                 alt="image of Atomic habits book"/>
-            <p>Emphasizes how good and bad habits can impact your routine and small changes can end up providing big results.</p>
-            <p><b>Rs.990</b></p>
-            <button class="btn">Oder Now</button>
-        </center>
+</div>
+
+<!-- ================= BOOK 4 ================= -->
+
+<div class="book-card">
+
+    <div class="book-image">
+
+        <img src="book world images/the golden road.jpg"
+             alt="The Golden Road">
+
     </div>
 
-    <div class="book">
-        <center>
-            <p><b>The Anxious Generation</b></p>
-            <img src="book world images/book10.jpg" width="125px" height="220px"
-                 alt="image of Anxious generation book"/>/>
-            <p>Lays out the facts about the epidemic of teen mental illness that hit many countries at the same time.</p>
-            <p><b>Rs.950</b></p>
-            <button class="btn">Oder Now</button>
-        </center>
+    <div class="book-info">
+
+        <div class="rating">
+
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+
+        </div>
+
+        <h3>
+
+            The Golden Road
+
+        </h3>
+
+        <p>
+
+            William Dalrymple
+
+        </p>
+
+        <h4>
+
+            Rs.850
+
+        </h4>
+
+        <div class="book-buttons">
+
+            <button class="cart-btn">
+
+                <i class="fas fa-cart-plus"></i>
+
+                Add to Cart
+
+            </button>
+
+            <a href="#">
+
+                View Details
+
+            </a>
+
+        </div>
+
     </div>
 
-</center>
+</div>
 
-    <br/>
+<!-- ================= BOOK 5 ================= -->
 
-    <iframe src="embedded.html"></iframe>
+<div class="book-card">
 
-    <section class="body1">
+    <div class="book-image">
 
-    <section>
-        <p><b>Subscribe to Newsletter</b></p>
+        <img src="book world images/the anxious generation.jpg"
+             alt="The Anxious Generation">
 
-        <label>Email</label>
-        <input type="text" name="mail"/>
+        <span class="badge">
 
-        <button class="btn">Subscribe</button>
-    </section>
+            New
 
-    <center>
-        <section class="footer">
-            <p class="p1">117/1 Kong Tree Road, Thalapitiya, Galle, Sri Lanka</p>
-            <p class="p1">0772345671</p>
-            <p class="p1">bookworld@gmail.com</p>
+        </span>
+
+    </div>
+
+    <div class="book-info">
+
+        <div class="rating">
+
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+
+        </div>
+
+        <h3>
+
+            The Anxious Generation
+
+        </h3>
+
+        <p>
+
+            Jonathan Haidt
+
+        </p>
+
+        <h4>
+
+            Rs.950
+
+        </h4>
+
+        <div class="book-buttons">
+
+            <button class="cart-btn">
+
+                <i class="fas fa-cart-plus"></i>
+
+                Add to Cart
+
+            </button>
+
+            <a href="#">
+
+                View Details
+
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- ================= BOOK 6 ================= -->
+
+<div class="book-card">
+
+    <div class="book-image">
+
+        <img src="book world images/counting miracles.jpg"
+             alt="Counting Miracles">
+
+    </div>
+
+    <div class="book-info">
+
+        <div class="rating">
+
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+
+        </div>
+
+        <h3>
+
+            Counting Miracles
+
+        </h3>
+
+        <p>
+
+            Nicholas Sparks
+
+        </p>
+
+        <h4>
+
+            Rs.900
+
+        </h4>
+
+        <div class="book-buttons">
+
+            <button class="cart-btn">
+
+                <i class="fas fa-cart-plus"></i>
+
+                Add to Cart
+
+            </button>
+
+            <a href="#">
+
+                View Details
+
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+    </div>
+
+</section>
+
+<!-- ================= NEWSLETTER ================= -->
+
+<section class="newsletter" id="newsletter">
+
+    <div class="newsletter-container">
+
+        <div class="newsletter-text">
+
+            <h2>
+
+                Subscribe to Our Newsletter
+
+            </h2>
 
             <p>
-            <a href="https://www.facebook.com">Facebook |</a> 
-            <a href="https://www.instagram.com">Instagram |</a> 
-            <a href="https://www.youtube.com">You Tube</a>
-            </p>
-        </section>  
-    </center>
 
-    </section>
+                Stay updated with the latest non-fiction releases,
+                best-selling books, and exclusive offers.
+
+            </p>
+
+        </div>
+
+        <form class="newsletter-form">
+
+            <input
+                type="email"
+                placeholder="Enter your email address"
+                required>
+
+            <button type="submit">
+
+                Subscribe
+
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <div class="footer-container">
+
+        <div class="footer-column">
+
+            <h2>
+
+                <i class="fas fa-book-open"></i>
+
+                Book World
+
+            </h2>
+
+            <p>
+
+                Discover the best collection of books,
+                stationery items and gifts for every reader.
+
+            </p>
+
+            <div class="social-icons">
+
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+
+                <a href="#"><i class="fab fa-instagram"></i></a>
+
+                <a href="#"><i class="fab fa-youtube"></i></a>
+
+                <a href="#"><i class="fab fa-x-twitter"></i></a>
+
+            </div>
+
+        </div>
+
+        <div class="footer-column">
+
+            <h3>
+
+                Quick Links
+
+            </h3>
+
+            <ul>
+
+                <li><a href="index.html">Home</a></li>
+
+                <li><a href="fiction.html">Fiction</a></li>
+
+                <li><a href="non-fiction.html">Non Fiction</a></li>
+
+                <li><a href="stationary.html">Stationery</a></li>
+
+                <li><a href="gifts.html">Gift Items</a></li>
+
+            </ul>
+
+        </div>
+
+        <div class="footer-column">
+
+            <h3>
+
+                Contact
+
+            </h3>
+
+            <p>
+
+                <i class="fas fa-location-dot"></i>
+
+                117/1 Kong Tree Road,
+                Thalapitiya,
+                Galle,
+                Sri Lanka
+
+            </p>
+
+            <p>
+
+                <i class="fas fa-phone"></i>
+
+                +94 77 234 5671
+
+            </p>
+
+            <p>
+
+                <i class="fas fa-envelope"></i>
+
+                bookworld@gmail.com
+
+            </p>
+
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+
+        <p>
+
+            © 2026 Book World. All Rights Reserved.
+
+        </p>
+
+    </div>
+
+</footer>
+
+<!-- ================= TOAST ================= -->
+
+<div id="toast">
+
+    <i class="fas fa-circle-check"></i>
+
+    Item Added To Cart
+
+</div>
+
+<script src="js/script.js"></script>
 
 </body>
+
 </html>
