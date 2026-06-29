@@ -1,0 +1,1220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Book World | Discover Your Next Favorite Book</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+</head>
+
+<body>
+
+<!-- ================= Loading Screen ================= -->
+
+<div class="loader">
+
+    <div class="loader-content">
+
+        <i class="fa-solid fa-book-open"></i>
+
+        <h2>Book World</h2>
+
+        <span>Loading...</span>
+
+    </div>
+
+</div>
+
+<!-- ================= Scroll To Top ================= -->
+
+<button id="topBtn">
+
+<i class="fa-solid fa-arrow-up"></i>
+
+</button>
+
+<!-- ================= Header ================= -->
+
+<header>
+
+<nav class="navbar">
+
+<div class="logo">
+
+<i class="fa-solid fa-book-open"></i>
+
+<h2>Book World</h2>
+
+</div>
+
+<ul class="nav-links">
+
+<li><a href="index.html" class="active">Home</a></li>
+
+<li><a href="#books">Books</a></li>
+
+<li><a href="#categories">Categories</a></li>
+
+<li><a href="testimonial.html">Testimonials</a></li>
+
+<li><a href="contact us.html">Contact</a></li>
+
+</ul>
+
+<div class="nav-icons">
+
+<div class="search-box">
+
+<i class="fa-solid fa-magnifying-glass"></i>
+
+<input
+type="text"
+placeholder="Search Books..."
+id="searchInput">
+
+</div>
+
+<button id="themeBtn">
+
+<i class="fa-solid fa-moon"></i>
+
+</button>
+
+<div class="cart">
+
+<i class="fa-solid fa-cart-shopping"></i>
+
+<span id="cartCount">0</span>
+
+</div>
+
+<div class="menu-btn">
+
+<i class="fa-solid fa-bars"></i>
+
+</div>
+
+</div>
+
+</nav>
+
+</header>
+
+<!-- ================= Hero ================= -->
+
+<section class="hero">
+
+<div class="hero-overlay">
+
+<div class="hero-content">
+
+<span class="tag">
+
+#1 Online Bookstore
+
+</span>
+
+<h1>
+
+Discover Your Next
+
+<span>Favorite Book</span>
+
+</h1>
+
+<p>
+
+Browse thousands of books from bestselling authors,
+classic literature, educational resources, stationery,
+and thoughtful gift collections—all in one place.
+
+</p>
+
+<div class="hero-buttons">
+
+<a href="#books" class="primary-btn">
+
+Browse Books
+
+</a>
+
+<a href="#categories" class="secondary-btn">
+
+Explore Categories
+
+</a>
+
+</div>
+
+<div class="hero-stats">
+
+<div>
+
+<h2>10K+</h2>
+
+<p>Books</p>
+
+</div>
+
+<div>
+
+<h2>6K+</h2>
+
+<p>Customers</p>
+
+</div>
+
+<div>
+
+<h2>500+</h2>
+
+<p>Authors</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= Categories ================= -->
+
+<section class="categories" id="categories">
+
+<div class="section-title">
+
+<h2>
+
+Browse Categories
+
+</h2>
+
+<p>
+
+Choose your favorite collection
+
+</p>
+
+</div>
+
+<div class="category-grid">
+
+<a href="fiction.html" class="category-card">
+
+<div class="category-icon">
+
+<i class="fa-solid fa-book"></i>
+
+</div>
+
+<h3>
+
+Fiction Books
+
+</h3>
+
+<p>
+
+Fantasy, Romance, Mystery,
+Adventure and more.
+
+</p>
+
+<span>
+
+Explore
+
+<i class="fa-solid fa-arrow-right"></i>
+
+</span>
+
+</a>
+
+<a href="non-fiction.html" class="category-card">
+
+<div class="category-icon">
+
+<i class="fa-solid fa-book-open-reader"></i>
+
+</div>
+
+<h3>
+
+Non-Fiction
+
+</h3>
+
+<p>
+
+Business, Psychology,
+Biography and Self Help.
+
+</p>
+
+<span>
+
+Explore
+
+<i class="fa-solid fa-arrow-right"></i>
+
+</span>
+
+</a>
+
+<a href="stationary.html" class="category-card">
+
+<div class="category-icon">
+
+<i class="fa-solid fa-pencil"></i>
+
+</div>
+
+<h3>
+
+Stationery
+
+</h3>
+
+<p>
+
+Pens, notebooks,
+office supplies
+and school items.
+
+</p>
+
+<span>
+
+Explore
+
+<i class="fa-solid fa-arrow-right"></i>
+
+</span>
+
+</a>
+
+<a href="gifts & cards.html" class="category-card">
+
+<div class="category-icon">
+
+<i class="fa-solid fa-gift"></i>
+
+</div>
+
+<h3>
+
+Gift Items
+
+</h3>
+
+<p>
+
+Greeting cards,
+gift boxes,
+diaries and more.
+
+</p>
+
+<span>
+
+Explore
+
+<i class="fa-solid fa-arrow-right"></i>
+
+</span>
+
+</a>
+
+</div>
+
+</section>
+
+<!-- ================= Best Sellers ================= -->
+
+<section class="books" id="books">
+
+<div class="section-title">
+
+<h2>
+
+Best Sellers
+
+</h2>
+
+<p>
+
+Most popular books this month
+
+</p>
+
+</div>
+
+<div class="book-grid">
+    <!-- ================= Book Card 1 ================= -->
+
+<div class="book-card">
+
+    <div class="book-image">
+
+        <img src="book world images/lord of the rings.jpg" alt="The Lord of the Rings">
+
+        <span class="badge">
+            Best Seller
+        </span>
+
+    </div>
+
+    <div class="book-info">
+
+        <div class="rating">
+
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+
+        </div>
+
+        <h3>The Lord of the Rings</h3>
+
+        <p>
+            The epic fantasy novel by J.R.R. Tolkien
+            following Frodo's unforgettable journey.
+        </p>
+
+        <h4>Rs. 950</h4>
+
+        <div class="book-buttons">
+
+            <button class="cart-btn">
+
+                <i class="fas fa-cart-plus"></i>
+
+                Add to Cart
+
+            </button>
+
+            <a href="fiction.html">
+
+                View
+
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- ================= Book Card 2 ================= -->
+
+<div class="book-card">
+
+    <div class="book-image">
+
+        <img src="book world images/a tale of two cities.jpg" alt="A Tale of Two Cities">
+
+    </div>
+
+    <div class="book-info">
+
+        <div class="rating">
+
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+
+        </div>
+
+        <h3>A Tale of Two Cities</h3>
+
+        <p>
+
+            Charles Dickens' masterpiece set during
+            the French Revolution.
+
+        </p>
+
+        <h4>Rs. 950</h4>
+
+        <div class="book-buttons">
+
+            <button class="cart-btn">
+
+                <i class="fas fa-cart-plus"></i>
+
+                Add to Cart
+
+            </button>
+
+            <a href="fiction.html">
+
+                View
+
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- ================= Book Card 3 ================= -->
+
+<div class="book-card">
+
+    <div class="book-image">
+
+        <img src="book world images/psycology of money.jpg" alt="Psychology of Money">
+
+    </div>
+
+    <div class="book-info">
+
+        <div class="rating">
+
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+
+        </div>
+
+        <h3>Psychology of Money</h3>
+
+        <p>
+
+            Learn how human behaviour affects
+            financial success and wealth.
+
+        </p>
+
+        <h4>Rs. 990</h4>
+
+        <div class="book-buttons">
+
+            <button class="cart-btn">
+
+                <i class="fas fa-cart-plus"></i>
+
+                Add to Cart
+
+            </button>
+
+            <a href="non-fiction.html">
+
+                View
+
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- ================= Book Card 4 ================= -->
+
+<div class="book-card">
+
+    <div class="book-image">
+
+        <img src="book world images/atomic habits.jpg" alt="Atomic Habits">
+
+        <span class="badge sale">
+
+            New
+
+        </span>
+
+    </div>
+
+    <div class="book-info">
+
+        <div class="rating">
+
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+
+        </div>
+
+        <h3>Atomic Habits</h3>
+
+        <p>
+
+            Small habits create extraordinary
+            long-term results.
+
+        </p>
+
+        <h4>Rs. 990</h4>
+
+        <div class="book-buttons">
+
+            <button class="cart-btn">
+
+                <i class="fas fa-cart-plus"></i>
+
+                Add to Cart
+
+            </button>
+
+            <a href="non-fiction.html">
+
+                View
+
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= New Arrivals ================= -->
+
+<section class="books arrivals">
+
+    <div class="section-title">
+
+        <h2>
+
+            New Arrivals
+
+        </h2>
+
+        <p>
+
+            Fresh books recently added to our collection
+
+        </p>
+
+    </div>
+
+    <div class="book-grid">
+
+    <div class="book-card">
+
+    <div class="book-image">
+
+    <img src="book world images/playground.jpg" alt="Playground">
+
+    </div>
+
+    <div class="book-info">
+
+    <div class="rating">
+
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="far fa-star"></i>
+
+    </div>
+
+    <h3>
+
+    Playground
+
+    </h3>
+
+    <p>
+
+    An emotional coming-of-age novel filled
+    with friendship and ambition.
+
+    </p>
+
+    <h4>
+
+    Rs. 750
+
+    </h4>
+
+    <div class="book-buttons">
+
+    <button class="cart-btn">
+
+    <i class="fas fa-cart-plus"></i>
+
+    Add to Cart
+
+    </button>
+
+    <a href="fiction.html">
+
+    View
+
+    </a>
+
+    </div>
+
+    </div>
+
+    </div>
+
+    <div class="book-card">
+
+    <div class="book-image">
+
+    <img src="book world images/here one moment.jpg" alt="Here One Moment">
+
+    </div>
+
+    <div class="book-info">
+
+    <div class="rating">
+
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star-half-alt"></i>
+    <i class="far fa-star"></i>
+
+    </div>
+
+    <h3>
+
+    Here One Moment
+
+    </h3>
+
+    <p>
+
+    A thought-provoking novel exploring fate,
+    destiny and life's unexpected turns.
+
+    </p>
+
+    <h4>
+
+    Rs. 890
+
+    </h4>
+
+    <div class="book-buttons">
+
+    <button class="cart-btn">
+
+    <i class="fas fa-cart-plus"></i>
+
+    Add to Cart
+
+    </button>
+
+    <a href="fiction.html">
+
+    View
+
+    </a>
+
+    </div>
+
+    </div>
+
+    </div>
+
+    <div class="book-card">
+
+    <div class="book-image">
+
+    <img src="book world images/counting miracles.jpg" alt="Counting Miracles">
+
+    </div>
+
+    <div class="book-info">
+
+    <div class="rating">
+
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+
+    </div>
+
+    <h3>
+
+    Counting Miracles
+
+    </h3>
+
+    <p>
+
+    A heartwarming story of resilience,
+    hope and second chances.
+
+    </p>
+
+    <h4>
+
+    Rs. 900
+
+    </h4>
+
+    <div class="book-buttons">
+
+    <button class="cart-btn">
+
+    <i class="fas fa-cart-plus"></i>
+
+    Add to Cart
+
+    </button>
+
+    <a href="fiction.html">
+
+    View
+
+    </a>
+
+    </div>
+
+    </div>
+
+    </div>
+
+    <div class="book-card">
+
+    <div class="book-image">
+
+    <img src="book world images/the anxious generation.jpg" alt="The Anxious Generation">
+
+    </div>
+
+    <div class="book-info">
+
+    <div class="rating">
+
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star-half-alt"></i>
+
+    </div>
+
+    <h3>
+
+    The Anxious Generation
+
+    </h3>
+
+    <p>
+
+    A powerful exploration of mental health
+    in the digital age.
+
+    </p>
+
+    <h4>
+
+    Rs. 950
+
+    </h4>
+
+    <div class="book-buttons">
+
+    <button class="cart-btn">
+
+    <i class="fas fa-cart-plus"></i>
+
+    Add to Cart
+
+    </button>
+
+    <a href="non-fiction.html">
+
+    View
+
+    </a>
+
+    </div>
+
+    </div>
+
+    </div>
+
+    </div>
+
+</section>
+
+<!-- ================= WHY CHOOSE US ================= -->
+
+<section class="features">
+
+    <div class="section-title">
+
+        <h2>Why Choose Book World?</h2>
+
+        <p>We make reading enjoyable with quality products and exceptional service.</p>
+
+    </div>
+
+    <div class="feature-grid">
+
+        <div class="feature-card">
+
+            <div class="feature-icon">
+
+                <i class="fas fa-truck-fast"></i>
+
+            </div>
+
+            <h3>Fast Delivery</h3>
+
+            <p>
+
+                Get your favorite books delivered quickly and safely anywhere in Sri Lanka.
+
+            </p>
+
+        </div>
+
+        <div class="feature-card">
+
+            <div class="feature-icon">
+
+                <i class="fas fa-credit-card"></i>
+
+            </div>
+
+            <h3>Secure Payments</h3>
+
+            <p>
+
+                Shop with confidence using trusted and secure payment methods.
+
+            </p>
+
+        </div>
+
+        <div class="feature-card">
+
+            <div class="feature-icon">
+
+                <i class="fas fa-book-open"></i>
+
+            </div>
+
+            <h3>Large Collection</h3>
+
+            <p>
+
+                Browse thousands of fiction, non-fiction, stationery and gift items.
+
+            </p>
+
+        </div>
+
+        <div class="feature-card">
+
+            <div class="feature-icon">
+
+                <i class="fas fa-headset"></i>
+
+            </div>
+
+            <h3>24/7 Support</h3>
+
+            <p>
+
+                Our friendly support team is always ready to help you.
+
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= STATISTICS ================= -->
+
+<section class="stats">
+
+    <div class="overlay">
+
+        <div class="stats-container">
+
+            <div class="stat-box">
+
+                <h2 class="counter" data-target="10000">0</h2>
+
+                <p>Books Available</p>
+
+            </div>
+
+            <div class="stat-box">
+
+                <h2 class="counter" data-target="6000">0</h2>
+
+                <p>Happy Customers</p>
+
+            </div>
+
+            <div class="stat-box">
+
+                <h2 class="counter" data-target="350">0</h2>
+
+                <p>Best Selling Authors</p>
+
+            </div>
+
+            <div class="stat-box">
+
+                <h2 class="counter" data-target="99">0</h2>
+
+                <p>Customer Satisfaction (%)</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= SPECIAL OFFER ================= -->
+
+<section class="offer">
+
+    <div class="offer-content">
+
+        <span class="offer-tag">
+
+            Limited Time Offer
+
+        </span>
+
+        <h2>
+
+            Get 10% OFF Your First Order
+
+        </h2>
+
+        <p>
+
+            Subscribe to our newsletter today and receive exclusive offers,
+            latest arrivals and exciting discounts directly to your inbox.
+
+        </p>
+
+        <a href="#newsletter" class="primary-btn">
+
+            Claim Offer
+
+        </a>
+
+    </div>
+
+</section>
+
+<!-- ================= NEWSLETTER ================= -->
+
+<section class="newsletter" id="newsletter">
+
+    <div class="newsletter-container">
+
+        <div class="newsletter-text">
+
+            <h2>Subscribe to Our Newsletter</h2>
+
+            <p>
+                Stay updated with the latest book releases, exclusive discounts,
+                special promotions, and exciting events.
+            </p>
+
+        </div>
+
+        <form class="newsletter-form">
+
+            <input
+                type="email"
+                placeholder="Enter your email address"
+                required
+            >
+
+            <button type="submit">
+
+                Subscribe
+
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <div class="footer-container">
+
+        <div class="footer-column">
+
+            <h2>
+
+                <i class="fas fa-book-open"></i>
+
+                Book World
+
+            </h2>
+
+            <p>
+
+                Your one-stop destination for books,
+                stationery, gifts and educational resources.
+
+            </p>
+
+            <div class="social-icons">
+
+                <a href="https://facebook.com">
+
+                    <i class="fab fa-facebook-f"></i>
+
+                </a>
+
+                <a href="https://instagram.com">
+
+                    <i class="fab fa-instagram"></i>
+
+                </a>
+
+                <a href="https://youtube.com">
+
+                    <i class="fab fa-youtube"></i>
+
+                </a>
+
+                <a href="#">
+
+                    <i class="fab fa-x-twitter"></i>
+
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="footer-column">
+
+            <h3>
+
+                Quick Links
+
+            </h3>
+
+            <ul>
+
+                <li><a href="index.html">Home</a></li>
+
+                <li><a href="fiction.html">Fiction</a></li>
+
+                <li><a href="non-fiction.html">Non-Fiction</a></li>
+
+                <li><a href="stationary.html">Stationery</a></li>
+
+                <li><a href="gifts & cards.html">Gift Items</a></li>
+
+            </ul>
+
+        </div>
+
+        <div class="footer-column">
+
+            <h3>
+
+                Contact Us
+
+            </h3>
+
+            <p>
+
+                <i class="fas fa-location-dot"></i>
+
+                117/1 Kong Tree Road,
+                Thalapitiya,
+                Galle,
+                Sri Lanka
+
+            </p>
+
+            <p>
+
+                <i class="fas fa-phone"></i>
+
+                +94 77 234 5671
+
+            </p>
+
+            <p>
+
+                <i class="fas fa-envelope"></i>
+
+                bookworld@gmail.com
+
+            </p>
+
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+
+        <p>
+
+            © 2026 Book World.
+            All Rights Reserved.
+
+        </p>
+
+    </div>
+
+</footer>
+
+<!-- ================= Toast Notification ================= -->
+
+<div id="toast">
+
+    <i class="fas fa-circle-check"></i>
+
+    Item Added To Cart
+
+</div>
+
+<!-- ================= JavaScript ================= -->
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
