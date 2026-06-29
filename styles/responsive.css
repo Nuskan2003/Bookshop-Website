@@ -1,0 +1,206 @@
+/* ==========================================
+   LARGE DEVICES
+========================================== */
+@media (max-width:1200px){
+    section{
+        padding:80px 6%;
+    }
+    .navbar{
+        padding:18px 6%;
+    }
+    .hero-content h1{
+        font-size:54px;
+    }
+    .hero-stats{
+        gap:40px;
+    }
+    .footer-container{
+        width:90%;
+    }
+}
+
+/* ==========================================
+   TABLETS
+========================================== */
+
+@media (max-width:992px){
+    .navbar{
+        padding:18px 5%;
+    }
+
+    .nav-links{
+        position:fixed;
+        top:80px;
+        right:-100%;
+        width:280px;
+        height:100vh;
+        background:#ffffff;
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        justify-content:flex-start;
+        padding-top:50px;
+        gap:35px;
+        transition:.4s;
+        box-shadow:-5px 0 20px rgba(0,0,0,.1);
+    }
+
+    .nav-links.active{
+        right:0;
+    }
+
+    body.dark .nav-links{
+        background:#111827;
+    }
+
+    .menu-btn{
+        display:block;
+        font-size:26px;
+        cursor:pointer;
+    }
+
+    .search-box{
+        display:none;
+    }
+
+    .hero{
+        text-align:center;
+    }
+
+    .hero-content{
+        margin:auto;
+    }
+
+    .hero-buttons{
+        justify-content:center;
+        flex-wrap:wrap;
+    }
+
+    .hero-stats{
+        justify-content:center;
+        flex-wrap:wrap;
+    }
+
+    .newsletter-container{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .newsletter-form{
+        width:100%;
+        justify-content:center;
+    }
+
+}
+
+/* ==========================================
+   MOBILE
+========================================== */
+@media (max-width:768px){
+    section{
+        padding:70px 5%;
+    }
+
+    .hero{
+        min-height:90vh;
+    }
+
+    .hero-content h1{
+        font-size:42px;
+    }
+
+    .hero-content p{
+        font-size:16px;
+    }
+
+    .hero-stats{
+        flex-direction:column;
+        gap:25px;
+    }
+
+    .section-title h2{
+        font-size:34px;
+    }
+
+    .book-grid{
+        grid-template-columns:1fr;
+    }
+
+    .category-grid{
+        grid-template-columns:1fr;
+    }
+
+    .feature-grid{
+        grid-template-columns:1fr;
+    }
+
+    .stats-container{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .newsletter-form{
+        flex-direction:column;
+    }
+
+    .newsletter-form input{
+        width:100%;
+    }
+
+    .newsletter-form button{
+        width:100%;
+    }
+
+}
+
+/* ==========================================
+   SMALL MOBILE
+========================================== */
+@media (max-width:576px){
+
+    .logo h2{
+        font-size:22px;
+    }
+
+    .logo i{
+        font-size:28px;
+    }
+
+    .hero-content h1{
+        font-size:34px;
+    }
+
+    .hero-buttons{
+        flex-direction:column;
+    }
+
+    .primary-btn,
+    .secondary-btn{
+        width:100%;
+        text-align:center;
+    }
+
+    .stats-container{
+        grid-template-columns:1fr;
+    }
+
+    .footer-container{
+        grid-template-columns:1fr;
+        text-align:center;
+    }
+
+    .social-icons{
+        justify-content:center;
+    }
+
+    .footer-column i{
+        margin-right:6px;
+    }
+
+    #topBtn{
+        right:20px;
+        bottom:20px;
+        width:48px;
+        height:48px;
+    }
+
+}
