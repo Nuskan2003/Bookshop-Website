@@ -4,3 +4,12 @@ html/
 css/
 Files/
 videos/
+
+.DS_Store
+Thumbs.db
+
+.vscode/
+
+.idea/
+
+*.log
