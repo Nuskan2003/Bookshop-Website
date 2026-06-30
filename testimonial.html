@@ -1,85 +1,646 @@
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
-    <title>Testimonial</title>
-    <link rel="stylesheet" href="Book World.css"/>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Testimonials | Book World</title>
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <link rel="stylesheet"
+          href="styles/style.css">
+
+    <link rel="stylesheet"
+          href="styles/responsive.css">
+
 </head>
+
 <body>
-    <center>
-        <h1>BOOK WORLD 📖</h1>
-    </center>
 
-    <h2>Testimonials we recieved from customers</h2>
+<!-- ================= LOADER ================= -->
 
-<center>
+<div class="loader">
 
-    <section>
-        <section class="reviews">
-            <center>
-                <p><b>Mathew</b></p>
-                <p>
-                There so many books as well as items that I need for my college too.This site is very user friendly and items are being shown in a
-                proper way that customers can easily find books.These books are very useful for students and also for others as well.
-                </p>
-                <video width="300px" height="180px" controls autoplay>
-                <source src="book world images/testimonial1.mp4" type="video/mp4"/>
-                </video>
-                <p><b>01.10.2024</b></p>
-                <label>Did you enjoy our service</label>
-                <input type="checkbox"/>
-            </center>
-        </section>
+    <div class="loader-content">
 
-        
-        <section class="reviews">
-            <center>
-                <p><b>John</b></p>
-                <p>
-                This website is very useful because there are many good books to read also they are at very reasonable price.I find this site 
-                coincidencely and I am lucky to found this one.We can buy not only books but also the gift items too I think that is useful.
-                </p>
-                <video width="300px" height="180px" controls autoplay>
-                <source src="book world images/testimonial1.mp4" type="video/mp4"/>
-                </video>
-                <p><b>25.09.2024</b></p>
-                <label>Did you enjoy our service</label>
-                <input type="checkbox"/>
-            </center>
-        </section>
-    </section>
+        <i class="fas fa-book-open"></i>
 
-</center>
+        <h2>Book World</h2>
 
-    <br/>
+        <span>Loading...</span>
 
-    <iframe src="embedded.html"></iframe>
+    </div>
 
-    <section class="body1">
+</div>
 
-    <section>
-        <p><b>Subscribe to Newsletter</b></p>
+<button id="topBtn">
 
-        <label>Email</label>
-        <input type="text" name="mail"/>
+    <i class="fas fa-arrow-up"></i>
 
-        <button class="btn">Subscribe</button>
-    </section>
+</button>
 
-    <center>
-        <section class="footer">
-            <p class="p1">117/1 Kong Tree Road, Thalapitiya, Galle, Sri Lanka</p>
-            <p class="p1">0772345671</p>
-            <p class="p1">bookworld@gmail.com</p>
+<!-- ================= NAVBAR ================= -->
+
+<header>
+
+    <nav class="navbar">
+
+        <div class="logo">
+
+            <i class="fas fa-book-open"></i>
+
+            <h2>Book World</h2>
+
+        </div>
+
+        <ul class="nav-links">
+
+            <li><a href="index.html">Home</a></li>
+
+            <li><a href="fiction.html">Fiction</a></li>
+
+            <li><a href="non-fiction.html">Non Fiction</a></li>
+
+            <li><a href="stationery.html">Stationery</a></li>
+
+            <li><a href="gifts.html">Gift Items</a></li>
+
+            <li><a href="testimonial.html" class="active">Testimonials</a></li>
+
+            <li><a href="contact.html">Contact</a></li>
+
+        </ul>
+
+        <div class="nav-icons">
+
+            <button id="themeBtn">
+
+                <i class="fas fa-moon"></i>
+
+            </button>
+
+            <div class="cart">
+
+                <i class="fas fa-shopping-cart"></i>
+
+                <span id="cartCount">0</span>
+
+            </div>
+
+            <div class="menu-btn">
+
+                <i class="fas fa-bars"></i>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+</header>
+
+<!-- ================= HERO ================= -->
+
+<section class="hero category-hero">
+
+    <div class="hero-overlay">
+
+        <div class="hero-content">
+
+            <span class="tag">
+
+                Customer Reviews
+
+            </span>
+
+            <h1>
+
+                What Our Customers Say
+
+            </h1>
 
             <p>
-            <a href="https://www.facebook.com">Facebook |</a> 
-            <a href="https://www.instagram.com">Instagram |</a> 
-            <a href="https://www.youtube.com">You Tube</a>
-            </p>
-        </section>
-    </center>  
 
-    </section>
+                Thousands of readers trust Book World for
+                quality books, stationery and gift items.
+                Here's what some of them have to say.
+
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= BREADCRUMB ================= -->
+
+<section class="breadcrumb">
+
+    <a href="index.html">
+
+        Home
+
+    </a>
+
+    <span>/</span>
+
+    <span>
+
+        Testimonials
+
+    </span>
+
+</section>
+
+<!-- ================= STATS ================= -->
+
+<section class="features">
+
+    <div class="section-title">
+
+        <h2>
+
+            Trusted By Thousands
+
+        </h2>
+
+        <p>
+
+            Customer satisfaction is our highest priority.
+
+        </p>
+
+    </div>
+
+    <div class="feature-grid">
+
+        <div class="feature-card">
+
+            <div class="feature-icon">
+
+                <i class="fas fa-users"></i>
+
+            </div>
+
+            <h3>
+
+                6,000+
+
+            </h3>
+
+            <p>
+
+                Happy Customers
+
+            </p>
+
+        </div>
+
+        <div class="feature-card">
+
+            <div class="feature-icon">
+
+                <i class="fas fa-star"></i>
+
+            </div>
+
+            <h3>
+
+                4.9 / 5
+
+            </h3>
+
+            <p>
+
+                Average Rating
+
+            </p>
+
+        </div>
+
+        <div class="feature-card">
+
+            <div class="feature-icon">
+
+                <i class="fas fa-book"></i>
+
+            </div>
+
+            <h3>
+
+                10,000+
+
+            </h3>
+
+            <p>
+
+                Books Sold
+
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= TESTIMONIALS ================= -->
+
+<section class="books">
+
+    <div class="section-title">
+
+        <h2>
+
+            Customer Reviews
+
+        </h2>
+
+    </div>
+
+    <div class="book-grid">
+
+<!-- REVIEW 1 -->
+
+<div class="book-card">
+
+    <div class="book-info">
+
+        <div class="rating">
+
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+
+        </div>
+
+        <p>
+
+            "Book World has become my favourite online bookstore.
+            Delivery was quick, the books arrived in perfect condition,
+            and the customer service was excellent."
+
+        </p>
+
+        <h3>
+
+            Mathew Perera
+
+        </h3>
+
+        <small>
+
+            Verified Customer
+
+        </small>
+
+    </div>
+
+</div>
+
+<!-- REVIEW 2 -->
+
+<div class="book-card">
+
+    <div class="book-info">
+
+        <div class="rating">
+
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+
+        </div>
+
+        <p>
+
+            "Excellent collection of books at affordable prices.
+            I also purchased stationery items and the quality
+            exceeded my expectations."
+
+        </p>
+
+        <h3>
+
+            John Fernando
+
+        </h3>
+
+        <small>
+
+            Verified Customer
+
+        </small>
+
+    </div>
+
+</div>
+
+<!-- ================= REVIEW 3 ================= -->
+
+<div class="book-card">
+
+    <div class="book-info">
+
+        <div class="rating">
+
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+
+        </div>
+
+        <p>
+
+            "The website is beautifully designed and very easy to use.
+            I found exactly what I was looking for and the checkout
+            process was simple."
+
+        </p>
+
+        <h3>
+
+            Nadeesha Silva
+
+        </h3>
+
+        <small>
+
+            Verified Customer
+
+        </small>
+
+    </div>
+
+</div>
+
+<!-- ================= REVIEW 4 ================= -->
+
+<div class="book-card">
+
+    <div class="book-info">
+
+        <div class="rating">
+
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+
+        </div>
+
+        <p>
+
+            "The gift collection is amazing. I ordered a diary and
+            a gift box for my friend's birthday, and everything was
+            delivered on time."
+
+        </p>
+
+        <h3>
+
+            Fathima Nazeera
+
+        </h3>
+
+        <small>
+
+            Verified Customer
+
+        </small>
+
+    </div>
+
+</div>
+
+    </div>
+
+</section>
+
+<!-- ================= VIDEO TESTIMONIAL ================= -->
+
+<section class="features">
+
+    <div class="section-title">
+
+        <h2>
+
+            Customer Video Review
+
+        </h2>
+
+        <p>
+
+            Hear directly from one of our happy customers.
+
+        </p>
+
+    </div>
+
+    <div style="max-width:850px; margin:auto;">
+
+        <video controls
+               width="100%"
+               style="border-radius:20px; box-shadow:var(--shadow);">
+
+            <source src="book world images/testimonial1.mp4"
+                    type="video/mp4">
+
+            Your browser does not support the video tag.
+
+        </video>
+
+    </div>
+
+</section>
+
+<!-- ================= NEWSLETTER ================= -->
+
+<section class="newsletter">
+
+    <div class="newsletter-container">
+
+        <div class="newsletter-text">
+
+            <h2>
+
+                Join Our Community
+
+            </h2>
+
+            <p>
+
+                Subscribe to receive the latest book releases,
+                exclusive promotions and member-only discounts.
+
+            </p>
+
+        </div>
+
+        <form class="newsletter-form">
+
+            <input
+                type="email"
+                placeholder="Enter your email address"
+                required>
+
+            <button type="submit">
+
+                Subscribe
+
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <div class="footer-container">
+
+        <div class="footer-column">
+
+            <h2>
+
+                <i class="fas fa-book-open"></i>
+
+                Book World
+
+            </h2>
+
+            <p>
+
+                Bringing readers closer to knowledge,
+                imagination and inspiration every day.
+
+            </p>
+
+            <div class="social-icons">
+
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+
+                <a href="#"><i class="fab fa-instagram"></i></a>
+
+                <a href="#"><i class="fab fa-youtube"></i></a>
+
+                <a href="#"><i class="fab fa-x-twitter"></i></a>
+
+            </div>
+
+        </div>
+
+        <div class="footer-column">
+
+            <h3>
+
+                Quick Links
+
+            </h3>
+
+            <ul>
+
+                <li><a href="index.html">Home</a></li>
+                <li><a href="fiction.html">Fiction</a></li>
+                <li><a href="non-fiction.html">Non Fiction</a></li>
+                <li><a href="stationery.html">Stationery</a></li>
+                <li><a href="gifts.html">Gift Items</a></li>
+
+            </ul>
+
+        </div>
+
+        <div class="footer-column">
+
+            <h3>
+
+                Contact
+
+            </h3>
+
+            <p>
+
+                <i class="fas fa-location-dot"></i>
+
+                117/1 Kong Tree Road,
+                Thalapitiya,
+                Galle,
+                Sri Lanka
+
+            </p>
+
+            <p>
+
+                <i class="fas fa-phone"></i>
+
+                +94 77 234 5671
+
+            </p>
+
+            <p>
+
+                <i class="fas fa-envelope"></i>
+
+                bookworld@gmail.com
+
+            </p>
+
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+
+        <p>
+
+            © 2026 Book World. All Rights Reserved.
+
+        </p>
+
+    </div>
+
+</footer>
+
+<!-- ================= TOAST ================= -->
+
+<div id="toast">
+
+    <i class="fas fa-circle-check"></i>
+
+    Item Added To Cart
+
+</div>
+
+<script src="js/script.js"></script>
 
 </body>
+
 </html>
