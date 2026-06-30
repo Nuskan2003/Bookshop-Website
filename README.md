@@ -105,7 +105,7 @@ Each category includes:
 ```
 Book-World
 │
-├── css
+├── styles
 │   ├── style.css
 │   └── responsive.css
 │
@@ -171,7 +171,7 @@ The website is fully responsive and optimized for:
 
 ## 👨‍💻 Author
 
-**Afker Thowfeek**
+**Nuskan Nazar**
 
 University of Moratuwa
 
