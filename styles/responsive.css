@@ -177,6 +177,14 @@
         width:100%;
     }
 
+    .contact-container{
+    grid-template-columns:1fr;
+    }
+
+    .contact-map iframe{
+        min-height:400px;
+    }
+
 }
 
 /* ==========================================

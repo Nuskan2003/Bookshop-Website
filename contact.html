@@ -1,90 +1,621 @@
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
-    <title>Contact Us</title>
-    <link rel="stylesheet" href="Book World.css"/>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Contact Us | Book World</title>
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <link rel="stylesheet"
+          href="styles/style.css">
+
+    <link rel="stylesheet"
+          href="styles/responsive.css">
+
 </head>
+
 <body>
-    <center>
-        <h1>BOOK WORLD 📖</h1>
-    </center>
 
-    <p><b>Address: 117/1 Kong Tree Road, Thalapitiya, Galle, Sri Lanka | Contact No: 0772345671</b></p>
+<!-- ================= LOADER ================= -->
 
-    <center>
-        <p class="para">IF YOU HAVE ANY INQUIRIES</p>
-    </center>
+<div class="loader">
 
-    <section class="form">
+    <div class="loader-content">
 
-    <form method="get" action="">
-        <label>Name:</label>
-        <input type="text" name="name"/>
+        <i class="fas fa-book-open"></i>
 
-        <lable>Email:</lable>
-        <input type="text" name="email"/>
+        <h2>Book World</h2>
 
-        <label>Contact No:</label>
-        <input type="text" name="number"/>
+        <span>Loading...</span>
 
-        <p>Subject :</p>
-        <textarea cols="30" rows="10"></textarea>
+    </div>
 
-        <p>Message :</p>
-        <textarea cols="50" rows="20"></textarea>
+</div>
 
-        <br/>
+<button id="topBtn">
 
-        <input type="radio" name="customer" value="New Customer" id="customer1"/>
-        <label>New Customer</label>
+    <i class="fas fa-arrow-up"></i>
 
-        <input type="radio" name="customer" value="Already Visited Customer" id="customer2"/>
-        <lable>Already Visited Customer</lable>
+</button>
 
-        <br/>
+<!-- ================= NAVBAR ================= -->
 
-        <button class="submit">Submit</button>
-    </form>
+<header>
 
-    </section>
+    <nav class="navbar">
 
-    <br/>
+        <div class="logo">
 
-    <p>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d991.9113792448593!2d80.22431985233617!3d6.043279841207015!2m3!1f0!2f0
-        !3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae173c9dec95b3f%3A0xe721a2d5fa0f1e8c!2s39%20Kong%20Tree%20Rd%2C%20Galle%2080000!5e0!3m2!1sen!2s
-        lk!4v1728833015258!5m2!1sen!2slk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer
-        -when-downgrade"></iframe>
-    </p>
+            <i class="fas fa-book-open"></i>
 
-    <iframe src="embedded.html"></iframe>
+            <h2>Book World</h2>
 
-    <section class="body1">
+        </div>
 
-    <section>
-        <p><b>Subscribe to Newsletter</b></p>
+        <ul class="nav-links">
 
-        <label>Email</label>
-        <input type="text" name="mail"/>
+            <li><a href="index.html">Home</a></li>
 
-        <button class="btn">Subscribe</button>
-    </section>
+            <li><a href="fiction.html">Fiction</a></li>
 
-    <center>
-        <section class="footer">
-            <p class="p1">117/1 Kong Tree Road, Thalapitiya, Galle, Sri Lanka</p>
-            <p class="p1">0772345671</p>
-            <p class="p1">bookworld@gmail.com</p>
+            <li><a href="non-fiction.html">Non Fiction</a></li>
+
+            <li><a href="stationery.html">Stationery</a></li>
+
+            <li><a href="gifts.html">Gift Items</a></li>
+
+            <li><a href="testimonial.html">Testimonials</a></li>
+
+            <li><a href="contact.html"
+                   class="active">Contact</a></li>
+
+        </ul>
+
+        <div class="nav-icons">
+
+            <button id="themeBtn">
+
+                <i class="fas fa-moon"></i>
+
+            </button>
+
+            <div class="cart">
+
+                <i class="fas fa-shopping-cart"></i>
+
+                <span id="cartCount">
+
+                    0
+
+                </span>
+
+            </div>
+
+            <div class="menu-btn">
+
+                <i class="fas fa-bars"></i>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+</header>
+
+<!-- ================= HERO ================= -->
+
+<section class="hero category-hero">
+
+    <div class="hero-overlay">
+
+        <div class="hero-content">
+
+            <span class="tag">
+
+                Get In Touch
+
+            </span>
+
+            <h1>
+
+                We'd Love To Hear From You
+
+            </h1>
 
             <p>
-            <a href="https://www.facebook.com">Facebook |</a> 
-            <a href="https://www.instagram.com">Instagram |</a> 
-            <a href="https://www.youtube.com">You Tube</a>
+
+                Have a question, suggestion, or need assistance?
+                Our team is here to help.
+
             </p>
-        </section>
-    </center>  
-    
-    </section>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= BREADCRUMB ================= -->
+
+<section class="breadcrumb">
+
+    <a href="index.html">
+
+        Home
+
+    </a>
+
+    <span>/</span>
+
+    <span>
+
+        Contact
+
+    </span>
+
+</section>
+
+<!-- ================= CONTACT INFO ================= -->
+
+<section class="features">
+
+    <div class="section-title">
+
+        <h2>
+
+            Contact Information
+
+        </h2>
+
+        <p>
+
+            Reach us through any of the following methods.
+
+        </p>
+
+    </div>
+
+    <div class="feature-grid">
+
+        <div class="feature-card">
+
+            <div class="feature-icon">
+
+                <i class="fas fa-location-dot"></i>
+
+            </div>
+
+            <h3>
+
+                Address
+
+            </h3>
+
+            <p>
+
+                117/1 Kong Tree Road,
+                Thalapitiya,
+                Galle,
+                Sri Lanka
+
+            </p>
+
+        </div>
+
+        <div class="feature-card">
+
+            <div class="feature-icon">
+
+                <i class="fas fa-phone"></i>
+
+            </div>
+
+            <h3>
+
+                Phone
+
+            </h3>
+
+            <p>
+
+                +94 77 234 5671
+
+            </p>
+
+        </div>
+
+        <div class="feature-card">
+
+            <div class="feature-icon">
+
+                <i class="fas fa-envelope"></i>
+
+            </div>
+
+            <h3>
+
+                Email
+
+            </h3>
+
+            <p>
+
+                bookworld@gmail.com
+
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= CONTACT FORM ================= -->
+
+<section class="contact-section">
+
+    <div class="contact-container">
+
+        <div class="contact-form">
+
+            <h2>
+
+                Send Us A Message
+
+            </h2>
+
+            <form id="contactForm">
+
+                <div class="input-group">
+
+                    <input type="text"
+                           placeholder="Full Name"
+                           required>
+
+                </div>
+
+                <div class="input-group">
+
+                    <input type="email"
+                           placeholder="Email Address"
+                           required>
+
+                </div>
+
+                <div class="input-group">
+
+                    <input type="tel"
+                           placeholder="Phone Number">
+
+                </div>
+
+                <div class="input-group">
+
+                    <input type="text"
+                           placeholder="Subject"
+                           required>
+
+                </div>
+
+                <div class="input-group">
+
+                    <textarea rows="7"
+                              placeholder="Your Message"
+                              required></textarea>
+
+                </div>
+
+                <button class="primary-btn"
+                        type="submit">
+
+                    Send Message
+
+                </button>
+
+            </form>
+
+        </div>
+
+                </div>
+
+        <!-- ================= GOOGLE MAP ================= -->
+
+        <div class="contact-map">
+
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d991.9113792448593!2d80.22431985233617!3d6.043279841207015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae173c9dec95b3f%3A0xe721a2d5fa0f1e8c!2s39%20Kong%20Tree%20Rd%2C%20Galle%2080000!5e0!3m2!1sen!2slk!4v1728833015258!5m2!1sen!2slk"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+
+            </iframe>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= FAQ ================= -->
+
+<section class="faq">
+
+    <div class="section-title">
+
+        <h2>
+
+            Frequently Asked Questions
+
+        </h2>
+
+        <p>
+
+            Find answers to our most commonly asked questions.
+
+        </p>
+
+    </div>
+
+    <div class="faq-container">
+
+        <div class="faq-item">
+
+            <button class="faq-question">
+
+                Do you deliver all over Sri Lanka?
+
+                <i class="fas fa-chevron-down"></i>
+
+            </button>
+
+            <div class="faq-answer">
+
+                <p>
+
+                    Yes. We deliver books, stationery and gift items
+                    to every part of Sri Lanka.
+
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="faq-item">
+
+            <button class="faq-question">
+
+                How long does delivery take?
+
+                <i class="fas fa-chevron-down"></i>
+
+            </button>
+
+            <div class="faq-answer">
+
+                <p>
+
+                    Most orders are delivered within
+                    2–5 working days depending on your location.
+
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="faq-item">
+
+            <button class="faq-question">
+
+                Can I return a damaged item?
+
+                <i class="fas fa-chevron-down"></i>
+
+            </button>
+
+            <div class="faq-answer">
+
+                <p>
+
+                    Yes. Contact us within 7 days with proof of
+                    purchase and we'll arrange a replacement.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= NEWSLETTER ================= -->
+
+<section class="newsletter">
+
+    <div class="newsletter-container">
+
+        <div class="newsletter-text">
+
+            <h2>
+
+                Stay Connected
+
+            </h2>
+
+            <p>
+
+                Subscribe for exclusive discounts,
+                new arrivals and special promotions.
+
+            </p>
+
+        </div>
+
+        <form class="newsletter-form">
+
+            <input
+                type="email"
+                placeholder="Enter your email"
+                required>
+
+            <button type="submit">
+
+                Subscribe
+
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <div class="footer-container">
+
+        <div class="footer-column">
+
+            <h2>
+
+                <i class="fas fa-book-open"></i>
+
+                Book World
+
+            </h2>
+
+            <p>
+
+                Inspiring readers with books,
+                stationery and thoughtful gifts.
+
+            </p>
+
+            <div class="social-icons">
+
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+
+                <a href="#"><i class="fab fa-instagram"></i></a>
+
+                <a href="#"><i class="fab fa-youtube"></i></a>
+
+                <a href="#"><i class="fab fa-x-twitter"></i></a>
+
+            </div>
+
+        </div>
+
+        <div class="footer-column">
+
+            <h3>
+
+                Quick Links
+
+            </h3>
+
+            <ul>
+
+                <li><a href="index.html">Home</a></li>
+
+                <li><a href="fiction.html">Fiction</a></li>
+
+                <li><a href="non-fiction.html">Non Fiction</a></li>
+
+                <li><a href="stationery.html">Stationery</a></li>
+
+                <li><a href="gifts.html">Gift Items</a></li>
+
+            </ul>
+
+        </div>
+
+        <div class="footer-column">
+
+            <h3>
+
+                Contact
+
+            </h3>
+
+            <p>
+
+                <i class="fas fa-location-dot"></i>
+
+                117/1 Kong Tree Road,
+                Thalapitiya,
+                Galle,
+                Sri Lanka
+
+            </p>
+
+            <p>
+
+                <i class="fas fa-phone"></i>
+
+                +94 77 234 5671
+
+            </p>
+
+            <p>
+
+                <i class="fas fa-envelope"></i>
+
+                bookworld@gmail.com
+
+            </p>
+
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+
+        <p>
+
+            © 2026 Book World. All Rights Reserved.
+
+        </p>
+
+    </div>
+
+</footer>
+
+<!-- ================= TOAST ================= -->
+
+<div id="toast">
+
+    <i class="fas fa-circle-check"></i>
+
+    Item Added To Cart
+
+</div>
+
+<script src="js/script.js"></script>
 
 </body>
+
 </html>

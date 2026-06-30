@@ -315,3 +315,37 @@ newsletter.addEventListener("submit", (e) => {
     newsletter.reset();
 
 });
+
+// ==========================================
+// FAQ
+// ==========================================
+
+document.querySelectorAll(".faq-question").forEach(question => {
+
+    question.addEventListener("click", () => {
+
+        question.parentElement.classList.toggle("active");
+
+    });
+
+});
+
+// ==========================================
+// Contact Form
+// ==========================================
+
+const contactForm = document.getElementById("contactForm");
+
+if(contactForm){
+
+    contactForm.addEventListener("submit", (e)=>{
+
+        e.preventDefault();
+
+        alert("Thank you! Your message has been sent successfully.");
+
+        contactForm.reset();
+
+    });
+
+}
